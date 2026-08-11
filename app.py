@@ -13,8 +13,8 @@ st.set_page_config(
     layout="wide"
 )
 
-SUPABASE_URL = "https://tsgyaxeveplqgtyrlxiv.supabase.co"
-SUPABASE_KEY = "sb_publishable_8uJUbwg6gyn_CX0o1oub5Q_HJUwbPB8"
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
 supabase = create_client(
     SUPABASE_URL,
